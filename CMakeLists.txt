@@ -3,7 +3,7 @@ idf_component_register(
 )
 
 get_target_property(OPENTELEMETRY_API
-    __idf_esp_opentelemetry_sdk
+    __idf_albkharisov__esp_opentelemetry_api
     OPENTELEMETRY_API_TARGET
 )
 
