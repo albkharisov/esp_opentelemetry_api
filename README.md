@@ -8,9 +8,19 @@ ESP wrapper for API of [OpenTelemetry C++ Client](https://github.com/open-teleme
 [OpenTelemetry](https://opentelemetry.io/) is a collection of APIs, SDKs, and tools. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 
 
+## How to use
+
+```
+idf.py add-dependency albkharisov/esp_opentelemetry_sdk && \
+idf.py add-dependency albkharisov/esp_opentelemetry_api
+```
+
+If you go another way and clone git-repo - don't forget to fetch submodules.
+
+
 ## Dependencies
 
-This package comes with `albkharisov/esp_opentelemetry_sdk`, as it depends
+This package comes with [albkharisov/esp_opentelemetry_sdk](https://components.espressif.com/components/albkharisov/esp_opentelemetry_sdk), as it depends
 on it. But build will succeed even if you exclude linking to SDK part
 in another component and forget to add exporters because API part consist
 of default stub implementation.
